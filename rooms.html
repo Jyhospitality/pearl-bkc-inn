@@ -26,6 +26,96 @@
 
     <!-- BOOKING CALENDAR STYLE -->
     <link href="css/booking-calendar-pro.css" rel="stylesheet" media="screen">
+    <style>
+        /* our room */
+
+.site-section {
+    padding: 40px 0 !important;
+}
+
+.our-rooms {
+    background: #f8f9fa
+}
+
+.room-card {
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.25s ease;
+    border-radius: 5px;
+    margin: 8px 0;
+}
+
+.room-img-box {
+    overflow: hidden;
+    transition: all 0.25s ease;
+}
+
+.room-img-box img {
+    transition: all 0.25s ease;
+}
+
+.room-card:hover .room-img-box img {
+    transform: scale(1.2);
+    transition: all 0.25s ease;
+}
+
+.room-card-text {
+    padding: 16px;
+    text-align: center;
+}
+
+.room-title {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    color: black;
+}
+
+.book-now-btn {
+    position: absolute;
+    top: calc(100vh - 80px);
+    left: 50vw;
+    z-index: 99;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 24px !important;
+    background: #004f7f;
+    color: white;
+    border: 1px solid #004f7f;
+}
+
+.book-now-btn:hover {
+    background: white;
+    color: #004f7f;
+}
+
+.title-heading {
+    font-family: playfair display;
+    font-size: 2.5em;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.title-box hr {
+    color: black;
+    width: 120px;
+    border-color: black;
+}
+
+.text-center {
+    text-align: center!important;
+}
+.img-fluid{
+        width:500px;
+    }
+.room-categoreis{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: column; */
+}
+    </style>
 
     <link href="css/switcher.css" rel="stylesheet" media="screen">
 
@@ -47,9 +137,9 @@
                     <div id="sticky-top-bar">
                         <div id="top-contact-wrap">
                             <!-- BEGIN TOP CONTACT INFO -->
-                            <div id="top-street-address"><span class="icon-map-marker"></span>Near Trade Center, BKC, Bandra (East)</div>
+                            <!--<div id="top-street-address"><span class="icon-map-marker"></span>Near Trade Center, BKC, Bandra (East)</div>-->
                             <div id="top-phone"><span class="icon-mobile-phone"></span><a href="tel:7039998884">7039998884</a></div>
-                            <div id="top-email"><span class="icon-envelope-alt"></span><a href="mailto:hbkcinn@gmail.com">hbkcinn@gmail.com</a></div>
+                            <div id="top-email"><span class="icon-envelope-alt"></span><a href="mailto:hotelpearlsbkcinn9323@gmail.com">hotelpearlsbkcinn9323@gmail.com</a></div>
                             <!-- END TOP CONTACT INFO -->
 
                         </div>
@@ -64,7 +154,7 @@
                     <div class="three columns" id="top-logo-wrap">
 
                         <!-- MAIN LOGO -->
-                        <a href="index.html"><img src="images/logoBKC.png" alt="Pearl BKC Inn logo" id="main-logo" /><img src="images/logo1small.png" alt="Pearl BKC Inn logo" id="main-logo-min" /></a>
+                        <a href="index.html"><img src="img/logo.jpeg" alt="BKC Inn logo" id="main-logo" /><img src="img/mob-logo.png" style="width: 75px;" alt="BKC Inn logo"  id="main-logo-min" /></a>
 
                     </div>
 
@@ -125,130 +215,62 @@
 
         <!-- BEGIN PAGE TITLE -->
         <div id="top-content-divider">
-            <div id="main-title-wrap">Deluxe Rooms</div>
+            <div id="main-title-wrap">Our Rooms</div>
             <div id="main-title-divider"></div>
+        </div>
+
+        <div class="site-section">
+            <div class="container">
+               
+                <div class="row room-categoreis" >
+                    <div class="col-12 col-md-12  col-lg-6">
+                        <a href="deluxe-double-room.html">
+                        </a>
+                        <div class="room-card">
+                            <a href="deluxe-double-room.html">
+                                <div class="room-img-box">
+                                    <img src="img/Deluxe-Double-Room/room2.jpg" class="img-fluid" alt="" >
+                                </div>
+
+                            </a>
+                            <div class="room-card-text">
+                                <a href="deluxe-double-room.html">
+                                    <div class="room-title">Deluxe Double Room</div>
+                                </a>
+                                <!-- <p>Executive Rooms at the Hotel Sheldon, are perfectly suited to accommodate business as well as budget travelers’ needs. Executive Rooms are classy accommodation that is wonderfully furnished and well-maintained.</p> -->
+                               <!--  <a href="deluxe-double-room.html">Read More</a> -->
+                            </div>
+                        </div>
+
+                    </div>
+                   
+                    <div class="col-12 col-md-12  col-lg-6">
+                        <a href="deluxe-triple-room.html">
+                        </a>
+                        <div class="room-card">
+                            <a href="deluxe-triple-room.html">
+                                <div class="room-img-box">
+                                    <img src="img/Deluxe-Triple-Room/room1.jpg" class="img-fluid" alt="" >
+                                </div>
+
+                            </a>
+                            <div class="room-card-text">
+                                <a href="deluxe-triple-room.html">
+                                    <div class="room-title">Deluxe Triple Room</div>
+                                 
+                                </a>  
+                                 <!-- <p>Superior Rooms at the Hotel Sheldon, are perfectly suited to accommodate business as well as budget travelers’ needs. Superior Rooms are classy accommodation that is wonderfully furnished and well-maintained.</p><a href="deluxe-triple-room.html">Read More</a> -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--  </div>-->
+            </div>
         </div>
         <!-- END PAGE TITLE -->
 
-        <!-- BEGIN PAGE CONTENT -->
-        <div class="container reservation-page-wrap">
-            <div class="eleven columns">
-                <br />
-
-                <!-- BEGIN RESERVATION PAGE SLIDER -->
-                <div class="bannercontainer">
-                    <div class="reservation-page-slider">
-                        <ul>
-
-                            <!-- FIRST SLIDE -->
-                            <li data-transition="fade" data-slotamount="2" data-masterspeed="300" data-slideindex="back" data-thumb="images/reservation1-thumbnail.jpg">
-                                <img src="images/bkcinn/_DSC4667 (1).png" alt="Pearl BKC Inn Room Image">
-                            </li>
-
-                            <!-- SECOND SLIDE -->
-                            <li data-transition="turnoff" data-slotamount="1" data-masterspeed="300" data-delay="9400" data-thumb="images/reservation2-thumbnail.jpg">
-                                <img src="images/bkcinn/_DSC4769.png" alt="Pearl BKC Inn Room Image">
-                            </li>
-
-                            <!-- THIRD SLIDE -->
-                            <li data-transition="slidedown" data-slotamount="7" data-masterspeed="300" data-thumb="images/reservation3-thumbnail.jpg">
-                                <img src="images/bkcinn/_DSC4717.png" alt="Pearl BKC Inn Room Image">
-                            </li>
-
-                        </ul>
-                        <div class="tp-bannertimer tp-bottom"></div>
-                    </div>
-                </div>
-                <!-- END RESERVATION PAGE SLIDER -->
-
-                <!-- BEGIN ROOM CONTENT -->
-                <div id="room-parametr">
-                    <div id="room-person">Max person: <span class="icon-male"></span><span class="icon-male"></span></div>
-                    <div id="room-bed">Room bed: 1 Queen Bed</div>
-                    <div id="room-size">Room size: 40-50sqm</div>
-                </div>
-                <div id="room-main-description">One of the most luxurious and spacious rooms in the hotel. Ideal for a couple or a business trip. On request, an extra bed or mattress can be placed. The deluxe rooms are tastefully decorated and equipped with all of the necessities.</div>
-
-                <div id="tabs-widget-wrap">
-                    <ul id="tabs">
-                        <li><a href="#" name="#tab1">Features <span class="icon-star"></span></a></li>
-                        <li><a href="#" name="#tab2">Policies <span class="icon-book"></span></a></li>
-                    </ul>
-                    <div id="tabs-content">
-                        <div id="tab1">
-                            <div id="room-features">
-                                <ul class="room-features-list">
-                                    <li><span class="icon-star"></span>Free Wi-Fi Internet inside rooms</li>
-                                    <li><span class="icon-star"></span>Room Services</li>
-                                    <li><span class="icon-star"></span>Intercom In Every Room</li>
-                                    <li><span class="icon-star"></span>Television</li>
-                                    <li><span class="icon-star"></span>Air Conditioning</li>
-                                    <li><span class="icon-star"></span>Laundry Service</li>
-                                    <li><span class="icon-star"></span>Daily Housekeeping</li>
-                                    <li><span class="icon-star"></span>Private Bathroom</li>
-                                    <li><span class="icon-star"></span>24hr Front Desk</li>
-                                    <li><span class="icon-star"></span>Doctor On Call</li>
-                                </ul>
-                                <div style="clear:both"></div>
-                            </div>
-                        </div>
-                        <div id="tab2">
-                            <div class="accordion-widget toggle">
-                                <div class="accordion-header show"><a href="#"><span class="icon-plus"></span>Check-in </a></div>
-                                <div class="accordion-content">From 15:00 hours</div>
-                                <div class="accordion-header show"><a href="#"><span class="icon-plus"></span>Check-out</a></div>
-                                <div class="accordion-content">Until 12:00 hours</div>
-                                <div class="accordion-header"><a href="#"><span class="icon-plus"></span>Cancellation / Prepayment</a></div>
-                                <div class="accordion-content">Cancellation and prepayment policies vary according to room type. Please email to us to learn more about it.</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br /><br />
-                <!-- <div id="room-features">
-					<ul class="room-features-list">
-						<li><span class="icon-star"></span>Free Wi-Fi Internet inside rooms</li>
-						<li><span class="icon-star"></span>Free Room Servises</li>
-						<li><span class="icon-star"></span>Breakfast included</li>
-						<li><span class="icon-star"></span>Beautiful view on the city</li>
-						<li><span class="icon-star"></span>Free Airport Pickup</li>
-						<li><span class="icon-star"></span>Free parking near hotel</li>
-						<li><span class="icon-star"></span>Satelite and Cable TV Included</li>
-						<li><span class="icon-star"></span>Air Conditioning</li>
-						<li><span class="icon-star"></span>Personal Safe</li>
-						<li><span class="icon-star"></span>Refrigerator</li>
-					</ul>
-					<div style="clear:both"></div>
-				</div>
-				<div id="frontend"></div> -->
-                <!-- END ROOM CONTENT -->
-            </div>
-
-            <!-- BEGIN RESERVATION PAGE SIDEBAR -->
-            <div class="four columns offset-by-one reservation-sidebar">
-
-                <!-- BEGIN SIDEBAR CONTACT INFO -->
-                <div class="sidebar-header">Contact Info</div>
-                <div id="contact-us-wrap">
-                    <div id="contact-us-wrap-intro">Have some questions or have problems with reservations? You may easily contact us through contacts below.</div>
-                    <ul>
-                        <li id="by-phone">
-                            <span class="icon-mobile-phone"></span>
-                            <div class="contact-info-content">
-                                <div class="contact-info-method-name">Telephone:</div> <br />022 2650 0253</div>
-                            <div style="clear:both"></div>
-                        </li>
-                        <li id="by-email">
-                            <span class="icon-envelope-alt"></span>
-                            <div class="contact-info-content">
-                                <div class="contact-info-method-name">Email:</div> <br />hbkcinn@gmail.com</div>
-                            <div style="clear:both"></div>
-                        </li>
-                    </ul>
-                </div>
-                <!-- END SIDEBAR CONTACT INFO -->
-
-            </div>
+        
             <!-- BEGIN RESERVATION PAGE SIDEBAR -->
 
         </div>
@@ -263,8 +285,7 @@
                         <!-- BEGIN FOOTER TWITTER FEED -->
                         <div class="eight columns">
                             <div class="footer-header">Find Us On The Map</div>
-
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3337.412547768708!2d72.86704051912922!3d19.07162110525427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c9bb9e2ec9ff%3A0xeae67ce4b16e9985!2sHotel%20BKC%20Inn!5e0!3m2!1sen!2sin!4v1663675877767!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.8166074214446!2d72.8693842!3d19.071799199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8ee0a37b759%3A0x84e7da4889418b0f!2sCapital%20O%2012063%20Hotel%20Pearls%20BKC%20Inn!5e0!3m2!1sen!2sin!4v1670047075381!5m2!1sen!2sin" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
                         </div>
@@ -272,11 +293,17 @@
 
                         <!-- BEGIN FOOTER CONTACT INFO -->
                         <div class="eight columns">
-                            <div class="footer-header">Contact Information</div>
+                            <div style="display: flex;justify-content: space-between;align-items: center;">
+                                <div class="footer-header">Contact Information</div>
+                                <div id="footer-social-wrap" style="text-align: right;">
+                                    <a href="https://instagram.com/hotelpearlbkcinn?igshid=YmMyMTA2M2Y="><span class="icon-instagram"></span></a>
+                                   </div>
+                            </div>
+                            
 
                             <div id="footer-contact-info-wrap">
                                 <div id="footer-email-wrap">
-                                    <span id="email-title"><span class="icon-envelope-alt"></span>Email:</span> <span id="email-value"><a href="mailto:hbkcinn@gmail.com">hbkcinn@gmail.com</a></span>
+                                    <span id="email-title"><span class="icon-envelope-alt"></span>Email:</span> <span id="email-value"><a href="mailto:hotelpearlsbkcinn9323@gmail.com">hotelpearlsbkcinn9323@gmail.com</a></span>
                                     <div style="clear:both;"></div>
                                 </div>
                                 <div id="footer-phone-wrap">
@@ -284,25 +311,25 @@
                                     <div style="clear:both;"></div>
                                 </div>
                                 <div id="footer-address-wrap">
-                                    <span id="address-title"><span class="icon-compass"></span>Address:</span> <span id="address-value">Building no- 11 Shop No 8 Ground Floor Motilal Nehru Nagar, B K C Road Bandra East, Mumbai, India</span>
+                                    <span id="address-title"><span class="icon-compass"></span>Address:</span> <span id="address-value">Building No 11, 1 Next to Trade Centre, SRA Commercial, Bandra East, Kolivery Village, MMRDA Area, Bandra Kurla Complex, Santacruz East, Mumbai, Maharashtra 400051</span>
                                     <div style="clear:both;"></div>
                                 </div>
                             </div>
-                            <div class="social-wrap-divider"></div>
-                            <div id="footer-social-wrap">
-                                <a href="https://www.facebook.com/bkcinn"><span class="icon-facebook"></span></a>
-                                <a href="https://www.instagram.com/bkcinn/"><span class="icon-instagram"></span></a>
+                            <!--<div class="social-wrap-divider"></div>
+                           <div id="footer-social-wrap" style="text-align: center;">
+                               <a href="https://www.facebook.com/bkcinn"><span class="icon-facebook"></span></a>
+                                <a href="https://instagram.com/hotelpearlbkcinn?igshid=YmMyMTA2M2Y="><span class="icon-instagram"></span></a>
 								<br><br><br><br><br><br><br><br>
 						<a href="http://hotelbkcinn.com/Terms.html">Terms & Conditions</a>
-                            </div>
-                        </div>
+                            </div> -->
+                        </div> 
                         <!-- END FOOTER CONTACT INFO -->
 
                         <div style="clear:both"></div>
 
                         <!-- BEGIN COPYRIGHT INFO -->
                         <div id="copyright-wrap">
-                            <div id="copyright-text">Copyright &copy; 2021 Pearl BKC Inn. All right reserved.</div>
+                            <div id="copyright-text">Copyright &copy; 2022 Pearl BKC Inn. All right reserved.</div>
                             <div id="copyright-links">Designed with ❤ by <a href="http://hospitalityminds.com">Hospitality Minds</a></div>
                         </div>
                         <!-- END COPYRIGHT INFO -->
